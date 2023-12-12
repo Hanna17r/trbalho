@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        button{
+         cursor: progress;
+        }
+   
+        #minhamensagem{
+            color:blue;
+        }
+
+    </style>
+</head>
+<body>
+
+    <button onclick="mostrarMensagem()">ACIONAR FUNÇÃO</button>
+    <button onclick="limparmensagem()">LIMPAR</button>
+
+    <div id="minhamensagem"> ------- </div>
+
+    <script>
+      function mostrarMensagem() {
+        var parte = document.getElementById("minhamensagem");
+        parte.innerHTML = "RETORNO DA MENSAGEM";
+      }
+
+        var parte = document.getElementById("minhamensagem");
+
+        function limparmensagem() {
+        var parte = document.getElementById("minhamensagem");
+        parte.innerHTML = "flor";
+      }
+
+    </script>
+
+</body>
+
+</html>
